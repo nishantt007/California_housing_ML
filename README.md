@@ -15,11 +15,18 @@ This project builds a supervised regression model to predict **median house valu
 - Custom scikit-learn transformer for derived features
 - Unified preprocessing pipeline (imputation → feature engineering → scaling/encoding)
 - Comparison of Linear Regression, Decision Tree, and Random Forest regressors
-
+- Grid search hyperparameter tuning with cross-validation
+- Feature importance analysis on the best model
 
 ---
 
 ## Visualizations
+
+<img width="834" height="607" alt="image" src="https://github.com/user-attachments/assets/8119e181-fcd0-4f59-a10e-7cc0d70ca00b" />
+
+Above is the geographical scatter plot representing district locations colored by price and sized by population
+
+
 <img width="1021" height="707" alt="image" src="https://github.com/user-attachments/assets/b205785d-f3f1-4aa3-9e64-3f8bcb13ba92" />
 
 Above is the scatter matrix repreesnting  pairwise correlations between key attributes
@@ -36,6 +43,16 @@ Above is the scatter matrix repreesnting  pairwise correlations between key attr
 | Machine learning | scikit-learn |
 | Notebook environment | Jupyter Notebook |
 | Dataset format | CSV |
+
+---
+
+## Project Structure
+
+```
+.
+├── california_housing.csv        # Raw dataset (20,640 districts, 10 features)
+└── california_housing_ML.ipynb   # Main notebook: EDA → preprocessing → modeling
+```
 
 ---
 
